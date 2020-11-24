@@ -1,5 +1,8 @@
 # Student template
 
+[![Build Status](https://travis-ci.com/samaal62/TestingProject.svg?branch=main)](https://travis-ci.com/samaal62/TestingProject)
+[![Coverage Status](https://coveralls.io/repos/github/samaal62/TestingProject/badge.svg?branch=main)](https://coveralls.io/github/samaal62/TestingProject?branch=main)
+
 ## Purpose of this repository
 
 This is a project template for students participating in Software Testing course
