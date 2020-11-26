@@ -6,13 +6,16 @@
   "type": "module",
   "scripts": {
     "test": "jest",
-    "test:coveralls": "jest --coverage --collectCoverageFrom=src/*.js
-	&& coveralls < coverage/lcov.info"
+    "test:coveralls": "jest --coverage && coveralls < coverage/lcov.info"
   },
   "author": "",
   "license": "MIT",
   "jest": {
-    "transform": {"^.+\\.jsx?$": "babel-jest"}
+    "transform": {"^.+\\.jsx?$": "babel-jest"},
+    "coveragePathIgnorePatterns": [
+	   "/node_modules/",
+	   "/src/.internal/"
+    ]
   },
   "dependencies": {},
   "devDependencies": {
