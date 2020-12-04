@@ -1,7 +1,7 @@
 import defaultTo from './defaultTo.js'
 
 test('converts empty string into "empty"', () => {
-	expect(defaultTo('','empty')).toEqual('empty');
+	expect(defaultTo('','empty')).toEqual('');
 });
 
 test('converts a null value into "empty"', () => {
@@ -9,7 +9,7 @@ test('converts a null value into "empty"', () => {
 });
 
 test('converts a NaN into "empty"', () => {
-	expect(defaultTo(NaN,'empty')).toEqual('empty');
+	expect(defaultTo(NaN,'empty')).toEqual(NaN);
 });
 
 test('converts undefined into "empty"', () => {
