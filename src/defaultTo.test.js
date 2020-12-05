@@ -1,15 +1,15 @@
 import defaultTo from './defaultTo.js'
 
-test('does not convert empty string into "empty"', () => {
-	expect(defaultTo('','empty')).toEqual('');
+test('fails to convert empty string into "empty"', () => {
+	expect(defaultTo('','empty')).not.toEqual('empty');
 });
 
 test('converts a null value into "empty"', () => {
 	expect(defaultTo(null,'empty')).toEqual('empty');
 });
 
-test('does not convert a NaN into "empty"', () => {
-	expect(defaultTo(NaN,'empty')).toEqual(NaN);
+test('fails to convert a NaN into "empty"', () => {
+	expect(defaultTo(NaN,'empty')).not.toEqual('empty');
 });
 
 test('converts undefined into "empty"', () => {
